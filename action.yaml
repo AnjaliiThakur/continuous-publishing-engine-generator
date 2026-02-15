@@ -1,0 +1,20 @@
+name: "continuous-publishing-engine"
+description: "Generates blogs using feed.py"
+author: "Anjali Thakur"
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
+
+branding:
+  icon: "git-branch"
+  color: "red"
+inputs:
+  email:
+    description: "The commiter's email address"
+    default: "${{ github.actor }}@localhost"
+    required: true
+  name:
+    description: "The commiter's name"
+    default: "${{ github.actor }}"
+    required: true
