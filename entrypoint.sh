@@ -1,7 +1,7 @@
 #!/bin/bash
 # This script runs feed.py
 echo "=================================="
-echo "Running podcast generator..."
+echo "Running Blog generator..."
 
 # Configure Git user
 git config --global user.name "${GITHUB_ACTOR}"
